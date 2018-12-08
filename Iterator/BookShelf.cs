@@ -1,18 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace Iterator
 {
     public class BookShelf: Aggregate
     {
-        private Book[] books;
+        private List<Book> books = new List<Book>();
         private int last = 0;
-        public BookShelf(int maxsize) {
-            this.books = new Book[maxsize];
-        }
+
         public Book GetBookAt(int index) {
             return books[index];
         }
         public void AppendBook(Book book) {
-            this.books[last] = book;
+            this.books.Add(book);
             last++;
         }
         public int GetLength() {

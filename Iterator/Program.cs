@@ -6,7 +6,7 @@ namespace Iterator
     {
         static void Main(string[] args)
         {
-            BookShelf bookShelf = new BookShelf(4);
+            BookShelf bookShelf = new BookShelf();
             bookShelf.AppendBook(new Book("Harry Poter & Wise Stone"));
             bookShelf.AppendBook(new Book("Life 100 cat"));
             bookShelf.AppendBook(new Book("Conffesion"));
